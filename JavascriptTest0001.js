@@ -26,4 +26,5 @@ function printDiamondPattern(n) {
     }
 }
 
+//number of rows 
 printDiamondPattern(5);
