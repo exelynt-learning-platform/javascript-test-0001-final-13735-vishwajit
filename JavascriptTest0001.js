@@ -1,4 +1,4 @@
-function printPatternSpaces(count) {
+function getPatternSpaces(count) {
     let str = "";
     for (let i = 0; i < count; i++) {
         str += " ";
@@ -6,8 +6,8 @@ function printPatternSpaces(count) {
     return str;
 }
 
-function printPatternRow(row, n) {
-    let line = printPatternSpaces(n - row);
+function getPatternRow(row, n) {
+    let line = getPatternSpaces(n - row);
 
     for (let j = 1; j <= 2 * row - 1; j++) {
         if (j === 1 || j === 2 * row - 1) {
@@ -22,7 +22,7 @@ function printPatternRow(row, n) {
 function printDiamondPattern(n) {
     for (let i = 1; i <= 2 * n - 1; i++) {
         let row = (i <= n) ? i : 2 * n - i;
-        printPatternRow(row, n);
+        getPatternRow(row, n);
     }
 }
 
