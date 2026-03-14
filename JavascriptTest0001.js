@@ -19,7 +19,6 @@ function printPatternRow(row, n) {
 
     console.log(line);
 }
-
 function printDiamondPattern(n) {
     for (let i = 1; i <= 2 * n - 1; i++) {
         let row = (i <= n) ? i : 2 * n - i;
