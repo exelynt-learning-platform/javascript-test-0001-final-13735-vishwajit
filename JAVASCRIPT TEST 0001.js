@@ -28,6 +28,5 @@ for (let i = rows - 1; i >= 1; i--) {
             line += " ";
         }
     }
-
     console.log(line);
 }
